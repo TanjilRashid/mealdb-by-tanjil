@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>MealDB By Tanjil</title>
 </head>
 <body>
 
     <header>
-        <nav>
-            <img src="images/Tasty_HUT.png" alt="">
-            <button>Sign Up</button>
+        <nav class="flex justify-between item-center py-8 px-32">
+            <div>
+                <img src="images/Tasty_HUT.png" alt="">
+            </div>
+            <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg">Sign Up</button>
         </nav>
     </header>
-    <section>
-        <h1>Taste Our Delicious Best Foods</h1>
+    <section class="banner-section text-center py-32 px-80 bg-slate-200">
+        <h1 class="text-4xl font-bold px-40">Taste Our Delicious Best Foods</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
         <div class="search-bar">
             <input type="text" placeholder="Search any food">
