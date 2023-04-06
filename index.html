@@ -11,27 +11,35 @@
 <body>
 
     <header>
-        <nav class="flex justify-between item-center py-8 px-32">
-            <div>
+        <nav class="flex justify-between py-6 px-32">
+            <div class="mt-auto mb-auto">
                 <img src="images/Tasty_HUT.png" alt="">
             </div>
             <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg">Sign Up</button>
         </nav>
     </header>
-    <section class="banner-section text-center py-32 px-80 bg-slate-200">
-        <h1 class="text-4xl font-bold px-40">Taste Our Delicious Best Foods</h1>
+    <section class="banner-section text-center flex flex-col gap-4 py-48 px-80 text-white bg-slate-200">
+        <h1 class="text-6xl font-bold px-10">Taste Our Delicious Best Foods</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
         <div class="search-bar">
-            <input type="text" placeholder="Search any food">
-            <button>Search</button>
+            <input class="py-3 px-8 w-3/4 rounded-lg" type="text" placeholder="Search any food">
+            <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg text-black">Search</button>
         </div>
     </section>
-    <main>
-        <h2>Your Favorite Food</h2>
-        <div class="food-items">
-            <div class="items">
-                <img src="" alt="">
-                <div class="item-text">
+    <main class="py-32 px-32">
+        <h2 class="text-4xl font-bold text-center">Your Favorite Food</h2>
+        <div class="food-items grid grid-cols-2">
+            <div class="items flex justify-center items-center">
+                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
+                <div class="item-text pl-4">
+                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
+                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
+                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="items flex justify-center items-center">
+                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
+                <div class="item-text pl-4">
                     <h3>Chicken Handi</h3>
                     <p>There are many variations of passages of available, but the majority have suffered</p>
                     <a href="#">View Details</a>
