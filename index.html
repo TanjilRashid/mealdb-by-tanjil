@@ -22,64 +22,17 @@
         <h1 class="text-6xl font-bold px-10">Taste Our Delicious Best Foods</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
         <div class="search-bar">
-            <input class="py-3 px-8 w-3/4 rounded-lg" type="text" placeholder="Search any food">
-            <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg text-black">Search</button>
+            <input class="py-3 px-8 w-3/4 rounded-lg text-black" type="text" placeholder="Search any food" id="search-input">
+            <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg text-black" onclick="searchMeal()">Search</button>
         </div>
     </section>
     <main class="py-32 px-32">
         <h2 class="text-4xl font-bold text-center">Your Favorite Food</h2>
-        <div class="food-items grid grid-cols-2 gap-4 mt-20">
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
-            <div class="items flex justify-center items-center border border-slate-200 rounded-t-lg">
-                <img class="w-60 h-96 object-cover rounded-t-lg" src="images/Burger-and-Fries.jpg" alt="">
-                <div class="item-text pl-4 h-full flex flex-col justify-center gap-4">
-                    <h3 class="font-bold text-2xl">Chicken Handi</h3>
-                    <p class="">There are many variations of passages of available, but the majority have suffered</p>
-                    <a class="underline underline-offset-2 text-yellow-400" href="#">View Details</a>
-                </div>
-            </div>
+        <div id="food-items" class="grid grid-cols-2 gap-4 mt-20">
+            <!-- JS Dynamic HTML -->
         </div>
         <div class="btn-center flex flex-col items-center justify-center mt-20">
-            <button class="bg-yellow-400 font-bold py-3 px-8 rounded-lg">Show All</button>
+            <button onclick="showMore()" class="bg-yellow-400 font-bold py-3 px-8 rounded-lg">Show All</button>
         </div>
     </main>
     <footer class="bg-orange-50 flex gap-4 p-32">
